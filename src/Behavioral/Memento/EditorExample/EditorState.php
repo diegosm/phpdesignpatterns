@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Memento\Example1;
+namespace DesignPatterns\Behavioral\Memento\EditorExample;
 
 class EditorState
 {

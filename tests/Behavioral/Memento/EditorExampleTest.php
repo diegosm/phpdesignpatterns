@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Tests\Memento;
+namespace Tests\Behavioral\Memento;
 
-use DesignPatterns\Memento\Example1\Editor;
-use DesignPatterns\Memento\Example1\History;
+use DesignPatterns\Behavioral\Memento\EditorExample\Editor;
+use DesignPatterns\Behavioral\Memento\EditorExample\History;
 use PHPUnit\Framework\TestCase;
 
-class MementoTest extends TestCase
+class EditorExampleTest extends TestCase
 {
     public function testItCanCreateEditor()
     {
