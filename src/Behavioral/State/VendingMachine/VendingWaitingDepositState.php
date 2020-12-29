@@ -8,7 +8,8 @@ class VendingWaitingDepositState implements State
 {
     private VendingMachine $vendingMachine;
 
-    public function __construct(VendingMachine $vendingMachine) {
+    public function __construct(VendingMachine $vendingMachine)
+    {
         $this->vendingMachine = $vendingMachine;
     }
 

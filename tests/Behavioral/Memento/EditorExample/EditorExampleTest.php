@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Behavioral\Memento;
+namespace Tests\Behavioral\Memento\EditorExample;
 
 use DesignPatterns\Behavioral\Memento\EditorExample\Editor;
 use DesignPatterns\Behavioral\Memento\EditorExample\History;
