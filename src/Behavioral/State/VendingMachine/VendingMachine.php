@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace DesignPatterns\Behavioral\State\VendingMachine;
 
+use DesignPatterns\Behavioral\State\VendingMachine\Contracts\State;
+use DesignPatterns\Behavioral\State\VendingMachine\States\VendingWaitingDepositState;
+
 class VendingMachine
 {
     private State $currentState;

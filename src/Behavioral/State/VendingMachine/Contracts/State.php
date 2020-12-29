@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\Behavioral\State\VendingMachine;
+namespace DesignPatterns\Behavioral\State\VendingMachine\Contracts;
 
 interface State
 {
