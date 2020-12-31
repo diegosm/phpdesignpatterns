@@ -5,14 +5,15 @@ declare(strict_types=1);
 namespace DesignPatterns\Creational\AbstractFactory\SandwichExample\Factories;
 
 use DesignPatterns\Creational\AbstractFactory\SandwichExample\Breads\Beet;
-use DesignPatterns\Creational\AbstractFactory\SandwichExample\Cheese\Mozzarella;
+use DesignPatterns\Creational\AbstractFactory\SandwichExample\Breads\Common;
+use DesignPatterns\Creational\AbstractFactory\SandwichExample\Cheese\Cheddar;
 use DesignPatterns\Creational\AbstractFactory\SandwichExample\Contracts\BreadInterface;
 use DesignPatterns\Creational\AbstractFactory\SandwichExample\Contracts\CheeseInterface;
-use DesignPatterns\Creational\AbstractFactory\SandwichExample\Contracts\SandwichAbstractFactory;
 use DesignPatterns\Creational\AbstractFactory\SandwichExample\Contracts\HamburgerInterface;
-use DesignPatterns\Creational\AbstractFactory\SandwichExample\Hamburgers\Chicken;
+use DesignPatterns\Creational\AbstractFactory\SandwichExample\Contracts\SandwichAbstractFactory;
+use DesignPatterns\Creational\AbstractFactory\SandwichExample\Hamburgers\Vegan;
 
-class ChickenCheeseburgerFactory extends SandwichAbstractFactory
+class CheddarVeganBurgerFactory extends SandwichAbstractFactory
 {
     public function createBread(): BreadInterface
     {
@@ -21,11 +22,11 @@ class ChickenCheeseburgerFactory extends SandwichAbstractFactory
 
     public function createHamburger(): HamburgerInterface
     {
-        return new Chicken();
+        return new Vegan();
     }
 
     public function createCheese(): CheeseInterface
     {
-        return new Mozzarella();
+        return new Cheddar();
     }
 }

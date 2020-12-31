@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace Tests\Creational\AbstractFactory\SandwichExample;
 
-use DesignPatterns\Creational\AbstractFactory\SandwichExample\Factories\ChickenCheeseburgerFactory;
+use DesignPatterns\Creational\AbstractFactory\SandwichExample\Factories\CheddarVeganBurgerFactory;
+use DesignPatterns\Creational\AbstractFactory\SandwichExample\Factories\ChickenCheeseBurgerFactory;
 use DesignPatterns\Creational\AbstractFactory\SandwichExample\Contracts\BreadInterface;
 use DesignPatterns\Creational\AbstractFactory\SandwichExample\Contracts\CheeseInterface;
 use DesignPatterns\Creational\AbstractFactory\SandwichExample\Contracts\HamburgerInterface;
@@ -18,10 +19,13 @@ class SandwichExampleTest extends TestCase
     {
         return [
             [
-                new ChickenCheeseburgerFactory()
+                new ChickenCheeseBurgerFactory()
             ],
             [
                 new DoubleBurgerFactory()
+            ],
+            [
+                new CheddarVeganBurgerFactory()
             ]
         ];
     }
