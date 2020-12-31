@@ -10,6 +10,6 @@ class Memory16Gb implements MemoryInterface
 {
     public function getName(): string
     {
-        return "15 Gb";
+        return "16 Gb";
     }
 }

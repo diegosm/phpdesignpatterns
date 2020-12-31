@@ -6,7 +6,7 @@ namespace Tests\Creational\AbstractFactory\NotebookExample;
 
 use DesignPatterns\Creational\AbstractFactory\NotebookExample\Contracts\DisplayInterface;
 use DesignPatterns\Creational\AbstractFactory\NotebookExample\Contracts\MemoryInterface;
-use DesignPatterns\Creational\AbstractFactory\NotebookExample\Contracts\NotebookFactory;
+use DesignPatterns\Creational\AbstractFactory\NotebookExample\Contracts\NotebookAbstractFactory;
 use DesignPatterns\Creational\AbstractFactory\NotebookExample\Contracts\ProcessorInterface;
 use DesignPatterns\Creational\AbstractFactory\NotebookExample\Factories\Notebook1;
 use DesignPatterns\Creational\AbstractFactory\NotebookExample\Factories\Notebook2;
@@ -31,7 +31,7 @@ class NotebookExampleTest extends TestCase
     }
 
     /**
-     * @param NotebookFactory
+     * @param NotebookAbstractFactory
      * @dataProvider dataProvider
      */
     public function testItCanCreateNotebooks($factory)

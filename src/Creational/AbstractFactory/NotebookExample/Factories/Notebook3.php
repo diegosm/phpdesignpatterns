@@ -6,13 +6,13 @@ namespace DesignPatterns\Creational\AbstractFactory\NotebookExample\Factories;
 
 use DesignPatterns\Creational\AbstractFactory\NotebookExample\Contracts\DisplayInterface;
 use DesignPatterns\Creational\AbstractFactory\NotebookExample\Contracts\MemoryInterface;
-use DesignPatterns\Creational\AbstractFactory\NotebookExample\Contracts\NotebookFactory;
+use DesignPatterns\Creational\AbstractFactory\NotebookExample\Contracts\NotebookAbstractFactory;
 use DesignPatterns\Creational\AbstractFactory\NotebookExample\Contracts\ProcessorInterface;
 use DesignPatterns\Creational\AbstractFactory\NotebookExample\Displays\Display15;
 use DesignPatterns\Creational\AbstractFactory\NotebookExample\Memories\Memory32Gb;
 use DesignPatterns\Creational\AbstractFactory\NotebookExample\Processors\I9;
 
-class Notebook3 implements NotebookFactory
+class Notebook3 implements NotebookAbstractFactory
 {
     public function createMemory(): MemoryInterface
     {

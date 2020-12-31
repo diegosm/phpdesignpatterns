@@ -10,6 +10,6 @@ class I7 implements ProcessorInterface
 {
     public function getName(): string
     {
-        return "i7";
+        return "I7";
     }
 }

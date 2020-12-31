@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace DesignPatterns\Creational\AbstractFactory\NotebookExample\Contracts;
 
-interface NotebookFactory
+interface NotebookAbstractFactory
 {
     public function createMemory() : MemoryInterface;
 
