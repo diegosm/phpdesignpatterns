@@ -10,6 +10,6 @@ class Chicken implements HamburgerInterface
 {
     public function getName(): string
     {
-        return "Chicken Hamburguer";
+        return "Chicken Hamburger";
     }
 }

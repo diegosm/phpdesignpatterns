@@ -10,6 +10,6 @@ class Beef implements HamburgerInterface
 {
     public function getName(): string
     {
-        return "Beef Hamburguer";
+        return "Beef Hamburger";
     }
 }
