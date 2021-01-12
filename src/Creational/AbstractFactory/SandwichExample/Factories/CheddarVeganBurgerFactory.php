@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace DesignPatterns\Creational\AbstractFactory\SandwichExample\Factories;
 
 use DesignPatterns\Creational\AbstractFactory\SandwichExample\Breads\Beet;
-use DesignPatterns\Creational\AbstractFactory\SandwichExample\Breads\Common;
 use DesignPatterns\Creational\AbstractFactory\SandwichExample\Cheese\Cheddar;
 use DesignPatterns\Creational\AbstractFactory\SandwichExample\Contracts\BreadInterface;
 use DesignPatterns\Creational\AbstractFactory\SandwichExample\Contracts\CheeseInterface;
